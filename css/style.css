@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5e5e5e;
+}
+header {
+  font-family: "PT Serif", serif;
+}
+.header-top {
+  background-color: #303030;
+}
+.header-btn {
+  float: right;
+  line-height: 36px;
+  color: #1b1b1b;
+  background-color: #ffc222;
+  padding: 5px 20px 4px 50px;
+  font-size: 16px;
+  position: relative;
+}
+.header-btn:before {
+  content: "\f0b1";
+  font-family: "icomoon";
+  position: absolute;
+  left: 22px;
+  color: #1b1b1b;
+}
+
+.header-contacts:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.header-phone,
+.header-email {
+  color: #cbcacb;
+  letter-spacing: 0, 25px;
+  line-height: 45px;
+  position: relative;
+}
+.header-phone {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.header-phone:before {
+  content: "\f095";
+  font-family: "icomoon";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+}
+.header-email {
+  padding-left: 24px;
+}
+.header-email:before {
+  content: "\f003";
+  font-family: "icomoon";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+}
+.header_content {
+  padding: 34px 0px 23px;
+}
+.header_content-inner {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+}
+
+.menu li {
+  display: inline-block;
+}
+.menu a {
+  color: #323232;
+  font-size: 16px;
+  line-height: 36px;
+  border: 1px solid transparent;
+  padding: 0px 16px;
+  transition: all 0.3s;
+}
+.menu a:hover {
+  border-color: #ffc222;
+}
+.menu li + li {
+  padding-left: 10px;
+}
+#modal {
+  display: none;
+}
+.slider {
+  background-image: url(/images/meeting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+.slider_item-content {
+  text-align: center;
+  padding-top: 110px;
+  max-width: 665px;
+  margin: 0 auto;
+}
+.slider_title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgb(255, 124, 1);
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+  font-family: "Roboto", sans-serif;
+}
+.slider_text {
+  line-height: 24px;
+  font-size: 18px;
+  color: #ffc222;
+  margin-bottom: 50px;
+}
+.slider_btn {
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding: 8px 50px 8px 24px;
+  border: 1.5px solid #ffc222;
+}
