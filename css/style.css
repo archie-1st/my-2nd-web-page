@@ -137,7 +137,9 @@ header {
   color: #ffc222;
   margin-bottom: 50px;
 }
-.slider_btn {
+
+.default-btn{
+  display: inline block;
   font-size: 14px;
   line-height: 24px;
   color: black;
@@ -145,4 +147,47 @@ header {
   font-family: "Roboto", sans-serif;
   padding: 8px 50px 8px 24px;
   border: 1.5px solid #ffc222;
+  border-right-width: 20px;
+  position: relative;
+  transition: all 0.3s;
+}
+.default-btn:after{
+  content: "\f105"; 
+  font-family: "icomoon";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -12px;
+}
+.default-btn:hover{
+  border-color: #ffa600;
+} 
+.slider_inner{
+  position: relative;
+}
+.slick-btn{
+  position: absolute;
+  top: 80%;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #1b1b1b;
+  
+
+}
+.slick-btn:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slick-next:before{
+  content: "\f105";
+  font-family: "icomoon";
+}
+.slick-next{
+  right: 0;
+}
+.slick-prev{
+  left: 0;
 }
